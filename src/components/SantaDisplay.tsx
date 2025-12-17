@@ -21,7 +21,7 @@ const SantaDisplay: React.FC<SantaDisplayProps> = ({ jolliness }) => {
     <div className="santa-display">
       <div className="santa-container">
         <img
-          src={`/images/santa-${expression}.png`}
+          src={`${import.meta.env.BASE_URL}images/santa-${expression}.png`}
           alt={`Santa ${expression}`}
           className="santa-image"
         />
