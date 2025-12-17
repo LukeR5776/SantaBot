@@ -1,0 +1,77 @@
+.message-bubble {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 75%;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-message {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+.santa-message {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  color: #2d2d2d;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c41e3a;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.message-sender {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.santa-message .message-sender {
+  color: #c41e3a;
+}
+
+.user-message .message-sender {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.message-time {
+  font-size: 11px;
+}
+
+.message-content {
+  line-height: 1.5;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.user-message .message-content {
+  color: white;
+}
+
+.santa-message .message-content {
+  color: #2d2d2d;
+}

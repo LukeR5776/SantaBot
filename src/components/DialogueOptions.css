@@ -1,0 +1,24 @@
+.dialogue-options-container {
+  padding: 20px;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.dialogue-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Single column on mobile */
+@media (max-width: 768px) {
+  .dialogue-options-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dialogue-options-container {
+    padding: 16px;
+  }
+}
